@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createRoot } from 'react-dom/client';
+import RegistroForm from './components/registro';
+import IngresoForm from './components/ingreso';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const root = createRoot(document.getElementById('registro'));
+const root2 = createRoot(document.getElementById('ingreso'));
+
+root.render(<RegistroForm />);
+root2.render(<IngresoForm />);
