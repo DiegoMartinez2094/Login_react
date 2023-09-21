@@ -38,7 +38,7 @@ luego instalamos las dependencias del backend con el comando :
 npm install
 ```
 
-por ultimo corremos el archivo con el comando: 
+por ultimo corremos el archivo con el comando:
 
 ```
 npm run dev
@@ -53,3 +53,6 @@ Servidor iniciado en http://127.10.10.10:5000
 ![1695241576947](image/README/1695241576947.png)
 
 para ingresar, primero debe registrar su correo y contraseña, si se registra con el mismo correo anterior saldrá el siguiente aviso: credenciales registradas anteriormente, si se ingresan credenciales incorrectas saldra el siguiente aviso: credenciales incorrectas
+
+
+Nota: configurar las variables de entorno en el vite.config y en el .env si quiere deplegarlo localmente con el host: 127.10.10.10
