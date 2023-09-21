@@ -15,7 +15,7 @@ export default function IngresoForm() {
 
   const onIngresoClick = async () => {
     try {
-      const response = await fetch('http://127.10.10.10:5000/api/ingresar', {
+      const response = await fetch('http://192.168.129.72:5021/api/ingresar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // el tipo de archivo que se enviará es json
