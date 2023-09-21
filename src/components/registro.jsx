@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 export default function RegistroForm() {
   const [correo, setCorreo] = useState('');
   const [contraseña, setContraseña] = useState('');
@@ -14,6 +13,12 @@ export default function RegistroForm() {
   };
 
   const onRegistroClick = async () => {
+    // Validar si los campos están vacíos
+    if (!correo || !contraseña) {
+      alert('Por favor, completa todos los campos');
+      return;
+    }
+
     try {
       const response = await fetch('http://127.10.10.10:5000/api/registrar', {
         method: 'POST',
@@ -34,7 +39,7 @@ export default function RegistroForm() {
       } else {
         // Manejar errores aquí
         console.error('Error al registrar usuario registro.jsx');
-        alert('credenciales registradas anteriormente');
+        alert('Credenciales registradas anteriormente');
         setCorreo('');
         setContraseña('');
       }
