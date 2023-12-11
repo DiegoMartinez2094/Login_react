@@ -20,7 +20,7 @@ export default function RegistroForm() {
     }
 
     try {
-      const response = await fetch('http://192.168.129.72:5021/api/registrar', {
+      const response = await fetch('http://127.0.0.2:5021/api/registrar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
